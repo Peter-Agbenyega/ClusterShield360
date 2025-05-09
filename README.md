@@ -26,12 +26,14 @@ This project demonstrates how to build a secure and modular container orchestrat
 
 ---
 
-## Run Instructions (Simulation)
+## Run Instructions
 
-> NOTE: This project is designed to simulate real-world deployment and structure. No live AWS resources will be created unless Terraform is applied with valid credentials.
+This project provisions a real EKS Kubernetes Cluster on AWS using Terraform modules. You’ll need valid AWS credentials configured (`aws configure`).
+
+### Steps to Run
 
 ```bash
-# Navigate into Terraform folder
+# Navigate into Terraform directory
 cd terraform
 
 # Initialize Terraform
@@ -40,8 +42,12 @@ terraform init
 # Validate the configuration
 terraform validate
 
-# (Optional) Plan for review
+# Review the execution plan
 terraform plan
+
+# Deploy the infrastructure
+terraform apply
+
 
 
 Author
